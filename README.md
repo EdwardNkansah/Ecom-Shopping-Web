@@ -1,8 +1,5 @@
 ### EcomMobile Web Application 
 
-# Web App.
-https://ecom-shopping-web.onrender.com
-
 # Starting Server
 Create .env file in root directory with below contents. 
 
