@@ -1,6 +1,7 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
+<!-- <form method="post" action="{% url 'login' %}"> -->
 <form method="post" action="{% url 'login' %}">
   {% csrf_token %}
   <div class="form-group">
@@ -13,5 +14,8 @@
     <input type="password" class="form-control" id="exampleInputPassword1" name='password' placeholder="Password">
   </div>
   <button type="submit" class="btn btn-primary">Login</button>
+  <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
 </form>
-{% endblock content %}
+{% endblock content %} 
+
+

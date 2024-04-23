@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['word-otherword.herokuapp.com', 'localhost', '*']
 CSRF_TRUSTED_ORIGINS = [
-    'https://word-otherword.herokuapp.com', 'https://127.0.0.1', 'https://isabelsoprano-rondofilter-8000.codio-box.uk'
+    'https://word-otherword.herokuapp.com', 'https://127.0.0.1', 'https://isabelsoprano-rondofilter-8000.codio-box.uk','https://isabelsoprano-rondofilter-8000.codio-box.uk/'
 ]
 
 

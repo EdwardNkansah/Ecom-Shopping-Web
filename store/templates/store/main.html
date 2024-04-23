@@ -32,7 +32,7 @@
   padding: 15px;
 }
 
-    </style>
+</style>
 
     
 
@@ -52,7 +52,7 @@
                     }
                 }
             }
-        return cookieValue;
+          return cookieValue;
         }
         var csrftoken = getToken('csrftoken');
     </script>
@@ -78,6 +78,9 @@
         {% else %}
         <a href="{% url 'logout' %}"class="btn btn-warning">Logout</a>
         {% endif %}
+        
+      
+
 
         <!-- your navigation links -->
           <form method="get" action="{% url 'search' %}">
@@ -101,22 +104,6 @@
             {% endblock content %}
          </div>
 
-<br>
-<div>
-  page {{ page_obj.number }} of {{ page_obj.paginator }}
-  </div>
-
-<ul style="margin-left: 10px;" class="pagination">
-    {%if page_obj.has_previous %}
-    <li><a href="?page=1">&laquo; first</a></li>
-    <li><a href="?page={{ page_obj.previous_page_number }}">previous</a></li>
-    {% endif %}
-
-    {% if page_obj.has_next %}
-    <li><a href="?page={{ page_obj.next_page_number }}">next</a></li>
-    <li><a href="?page={{ page_obj.paginator.num_pages }}">last</a></li>
-    {% endif %}
-</ul>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
@@ -124,7 +111,8 @@
 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="{% static 'js/cart.js' %}" ></script>
+  <script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
+  <!-- <script type="text/javascript" src="{% static 'js/cart.js' %}" data-csrf-token="{% csrf_token %}"></script> -->
 
 <!-- Copyright -->
     <div class="text-center p-3" style="background-color: #ffffff">
